@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<manifest>
+
+  <control
+    namespace="DataverseDemo"
+    constructor="AccountControl"
+    version="1.0.0"
+    display-name-key="AccountControl"
+    description-key="AccountControl description"
+    control-type="standard">
+
+    <external-service-usage
+      enabled="false">
+    </external-service-usage>
+
+    <feature-usage>
+
+      <uses-feature
+        name="WebAPI"
+        required="true" />
+
+    </feature-usage>
+
+    <property
+      name="sampleProperty"
+      display-name-key="SampleProperty"
+      description-key="SampleProperty description"
+      of-type="SingleLine.Text"
+      usage="bound"
+      required="false" />
+
+    <resources>
+
+      <code
+        path="index.ts"
+        order="1" />
+
+    </resources>
+
+  </control>
+
+</manifest>
